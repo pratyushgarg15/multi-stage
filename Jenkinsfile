@@ -12,7 +12,7 @@ pipeline{
         stage("build and run docker"){
             steps{
                 script{
-                    sh "pwd"
+                    sh "systemctl status docker"
                 }
             }
         }
