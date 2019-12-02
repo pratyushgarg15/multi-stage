@@ -13,7 +13,7 @@ pipeline{
             steps{
                 script{
                     sh "docker build -t efficient ."
-                    sh "docker run inefficient"
+                    sh "docker run efficient"
                 }
             }
         }
