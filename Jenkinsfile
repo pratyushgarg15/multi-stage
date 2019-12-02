@@ -12,7 +12,8 @@ pipeline{
         stage("build and run docker"){
             steps{
                 script{
-                    sh "systemctl status docker"
+                    sh "docker build -t efficient ."
+                    sh "docker run inefficient"
                 }
             }
         }
