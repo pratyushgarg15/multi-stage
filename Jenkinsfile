@@ -14,7 +14,7 @@ pipeline{
                 script{
                     sh "docker build -t efficient ."
                     sh "docker run efficient"
-                    sh "whoami"
+                    sh "pwd"
                 }
             }
         }
